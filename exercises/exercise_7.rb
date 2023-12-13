@@ -10,3 +10,11 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+@my_store = Store.find(5).name
+
+store = Store.create(name: "White Rock")
+puts "Is store valid? => #{store.valid?}"
+
+puts "Errors: #{store.errors.full_messages}"
+
